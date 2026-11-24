@@ -1,0 +1,87 @@
+{
+  "candidate": "a09",
+  "source": "https://quaternius.com/packs/rpgcharacters.html",
+  "license": "CC0-1.0",
+  "triangles": 4090,
+  "boneCount": 32,
+  "animations": [
+    "Death",
+    "Idle",
+    "Idle_Attacking",
+    "Idle_Weapon",
+    "PickUp",
+    "Punch",
+    "RecieveHit",
+    "RecieveHit_2",
+    "Roll",
+    "Run",
+    "Run_Weapon",
+    "Spell1",
+    "Spell2",
+    "Staff_Attack",
+    "Walk"
+  ],
+  "bones": [
+    "Foot.L",
+    "Head",
+    "Neck",
+    "Fist2.L",
+    "Fist1.L",
+    "Fist.L",
+    "Thumb2.L",
+    "Thumb1.L",
+    "LowerArm.L",
+    "UpperArm.L",
+    "Shoulder.L",
+    "Fist2.R",
+    "Weapon.R",
+    "Fist1.R",
+    "Fist.R",
+    "Thumb2.R",
+    "Thumb1.R",
+    "LowerArm.R",
+    "UpperArm.R",
+    "Shoulder.R",
+    "Torso",
+    "Abdomen",
+    "Hips",
+    "LowerLeg.L",
+    "UpperLeg.L",
+    "LowerLeg.R",
+    "UpperLeg.R",
+    "Body",
+    "PoleTarget.L",
+    "Foot.R",
+    "PoleTarget.R",
+    "Root"
+  ],
+  "removedAttachments": [
+    "Wizard_Staff"
+  ],
+  "bytes": 2108580,
+  "notes": "Original source skin and animation tracks preserved. glTF Y-up; source transforms retained.",
+  "forwardAxis": "+Z",
+  "suggestedRotationY": 0,
+  "suggestedShopHeight": 1.75,
+  "estimatedSourceHeight": 3.067,
+  "armBones": {
+    "left": {
+      "shoulder": "Shoulder.L",
+      "upper": "UpperArm.L",
+      "lower": "LowerArm.L",
+      "hand": "Fist.L"
+    },
+    "right": {
+      "shoulder": "Shoulder.R",
+      "upper": "UpperArm.R",
+      "lower": "LowerArm.R",
+      "hand": "Fist.R"
+    }
+  },
+  "fitNotes": [
+    "glTF is Y-up; source character faces -Z, so rotate model by PI around Y when following the shop +Z actor heading.",
+    "Idle and Walk are in-place (no travelling root motion).",
+    "Normalise by visible model height and ground offset after applying Idle, not by source arm spread.",
+    "Source material has KHR_materials_unlit. For room lighting, replace it with a matte Lambert/Standard material while keeping the source albedo texture and flipY=false."
+  ]
+}

@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__/
+/app/build/
+/scenes/listening-room/output/
+*.apk
+*.jks
+*.keystore

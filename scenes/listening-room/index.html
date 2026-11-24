@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0c1826">
+  <title>冬日音响店 · 3D 微缩试听室</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="room" aria-label="冬日音响店，数码钟显示当前时间，人物在腿上阅读并喝咖啡或听音乐，顾客选唱片后扫码付款并从前门进出，小猫玩毛球和在猫窝睡觉，窗外飘雪，壁炉燃烧">
+    <div id="scene"></div>
+    <div class="vignette" aria-hidden="true"></div>
+    <div id="loading"><span class="loading-mark">冬听</span><span>正在点亮冬日音响店</span></div>
+    <div class="scene-note"><span class="live-dot"></span><span id="source-label">阅读时光 · 等待音乐</span></div>
+    <nav class="controls" aria-label="试听室控制">
+      <button id="play" class="primary" aria-label="暂停动画" title="暂停 / 继续 · 空格">
+        <svg id="pause-icon" viewBox="0 0 24 24"><path d="M8 6v12M16 6v12"/></svg>
+        <svg id="play-icon" viewBox="0 0 24 24" hidden><path d="m8 5 11 7-11 7z"/></svg>
+      </button>
+      <button id="sound" aria-label="开启试听音乐" title="开启试听音乐">
+        <svg viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4zM17 8c3 2 3 6 0 8"/><path id="sound-off" d="m18 3 3 3m0-3-3 3"/></svg>
+        <span>试听</span>
+      </button>
+      <button id="choose" aria-label="选择本地音乐" title="播放本地音乐，人物会跟随真实音频">
+        <svg viewBox="0 0 24 24"><path d="M9 17V5l11-2v12M9 8l11-2"/><ellipse cx="6" cy="18" rx="3" ry="2"/><ellipse cx="17" cy="16" rx="3" ry="2"/></svg>
+        <span>选音乐</span>
+      </button>
+      <i class="divider"></i>
+      <button id="light" class="active" aria-label="切换日光氛围" title="日光 / 雪夜">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1 1m12 12 1 1M5 19l1-1M18 6l1-1"/></svg>
+      </button>
+      <button id="view" aria-label="近看试听者" title="玻璃视窗 / 近看试听者">
+        <svg viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M9 9h6v6H9z"/></svg>
+      </button>
+      <button id="fullscreen" aria-label="全屏" title="全屏 · F">
+        <svg viewBox="0 0 24 24"><path d="M9 3H3v6m12-6h6v6M3 15v6h6m12-6v6h-6"/></svg>
+      </button>
+    </nav>
+    <div id="toast" role="status"></div>
+    <output id="debug" hidden aria-label="渲染状态"></output>
+    <input id="audio-file" type="file" accept="audio/*" hidden>
+    <audio id="music" preload="metadata"></audio>
+  </main>
+  <script src="vendor/three.min.js"></script>
+  <script src="vendor/Reflector.js"></script>
+  <script src="vendor/Pass.js"></script>
+  <script src="vendor/CopyShader.js"></script>
+  <script src="vendor/ShaderPass.js"></script>
+  <script src="vendor/MaskPass.js"></script>
+  <script src="vendor/EffectComposer.js"></script>
+  <script src="vendor/RenderPass.js"></script>
+  <script src="vendor/LuminosityHighPassShader.js"></script>
+  <script src="vendor/UnrealBloomPass.js"></script>
+  <script src="vendor/FXAAShader.js"></script>
+  <script src="listener.js"></script>
+  <script src="listener-life.js"></script>
+  <script src="wall-details.js"></script>
+  <script src="navigation.js"></script>
+  <script src="winter.js"></script>
+  <script src="checkout-qr.js"></script>
+  <script src="checkout.js"></script>
+  <script src="customers.js"></script>
+  <script src="assets/cat/cat-rig.js"></script>
+  <script src="cat-model.js"></script>
+  <script src="cat.js"></script>
+  <script src="vendor/GLTFLoader.js"></script>
+  <script src="customer-catalog.js"></script>
+  <script src="customer-trial.js"></script>
+  <script src="record-art.js"></script>
+  <script src="shop.js"></script>
+  <script src="audio.js"></script>
+</body>
+</html>

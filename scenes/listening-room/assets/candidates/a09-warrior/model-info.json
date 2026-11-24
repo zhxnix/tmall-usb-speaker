@@ -1,0 +1,80 @@
+{
+  "candidate": "a09-warrior",
+  "name": "A09 · 战士",
+  "family": "a09",
+  "source": "https://raw.githubusercontent.com/euuuuuuan/cairnfall-public/main/assets/vendor/quaternius_rpg/Warrior.gltf",
+  "license": "CC0-1.0",
+  "height": 1.95,
+  "forwardAxis": "+Z",
+  "triangles": 4690,
+  "boneCount": 32,
+  "bones": [
+    "Foot.L",
+    "Head",
+    "Neck",
+    "Fist2.L",
+    "Fist1.L",
+    "Fist.L",
+    "Thumb2.L",
+    "Thumb1.L",
+    "LowerArm.L",
+    "UpperArm.L",
+    "Shoulder.L",
+    "Fist2.R",
+    "Weapon.R",
+    "Fist1.R",
+    "Fist.R",
+    "Thumb2.R",
+    "Thumb1.R",
+    "LowerArm.R",
+    "UpperArm.R",
+    "Shoulder.R",
+    "Torso",
+    "Abdomen",
+    "Hips",
+    "LowerLeg.L",
+    "UpperLeg.L",
+    "LowerLeg.R",
+    "UpperLeg.R",
+    "Body",
+    "PoleTarget.L",
+    "Foot.R",
+    "PoleTarget.R",
+    "Root"
+  ],
+  "animations": [
+    "Death",
+    "Idle",
+    "Idle_Attacking",
+    "Idle_Weapon",
+    "PickUp",
+    "Punch",
+    "RecieveHit",
+    "Roll",
+    "Run",
+    "Run_Weapon",
+    "Sword_Attack",
+    "Sword_Attack2",
+    "Walk"
+  ],
+  "armBones": {
+    "left": {
+      "shoulder": "Shoulder.L",
+      "upper": "UpperArm.L",
+      "lower": "LowerArm.L",
+      "hand": "Fist.L"
+    },
+    "right": {
+      "shoulder": "Shoulder.R",
+      "upper": "UpperArm.R",
+      "lower": "LowerArm.R",
+      "hand": "Fist.R"
+    }
+  },
+  "independentWrist": true,
+  "removedAttachments": [
+    "Warrior_Sword"
+  ],
+  "bytes": 1960100,
+  "notes": "Embedded source skin and animation tracks preserved; weapon-only meshes detached."
+}
