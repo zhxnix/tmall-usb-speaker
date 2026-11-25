@@ -2,7 +2,7 @@
 
 把改造后的天猫精灵 CCH（TG-Z02、MT8167）用作电脑的 USB 音箱。Android 应用支持低延迟播放、原生流体可视化和离线 3D「冬日音响店」。场景随真实音频活动切换阅读和听歌状态，日期和昆明天气显示在店内时钟上。
 
-**原厂音箱仅安装 APK 无法开启 USB 声卡模式。** 目标设备使用 AOSP Android 8.1、ARM32、Linux 4.4.95+，需要预先运行适配该内核的 UAC1 接收模块和设备端 PCM 桥接。参见[改造原理和接口](docs/speaker-integration.md)。
+**原厂音箱仅安装 APK 无法开启 USB 声卡模式。** 目标设备使用 AOSP Android 8.1、ARM32、Linux 4.4.95+，需要预先运行适配该内核的 UAC1 接收模块和设备端 PCM 桥接。参见[改造原理和接口](docs/speaker-integration.md)及[实机刷机与踩坑记录](docs/flashing-notes.md)。
 
 ## 安装与使用
 
